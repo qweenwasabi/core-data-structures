@@ -24,7 +24,7 @@ describe('Stack', () => {
           const myStack = new Stack()
 
       expect(() => myStack.pop())
-       .to.alter(() => myStack.length(), { form: 1, to: 0 })
+       .to.alter(() => myStack.length(), { to:0 })
     })
   })
   context('peek()',() => {
