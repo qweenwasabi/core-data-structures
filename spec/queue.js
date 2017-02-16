@@ -24,9 +24,16 @@ describe('Queue', () => {
   //   it('returns and removes the front element in the queue or null if the queue is empty.', () => {
   //     const myQueue = new Queue()
   //
-  //     expect(() => myQueue.dequeue('foo'))
-  //       .to.satisfy(()=> myQueue.dequeue, { return myQueue(0) })
-  //       .to.alter(() => myQueue.length(), { from: 1, to: 0 })
+  //     expect(() => myQueue.dequeue( 'foo'))
+  //       .to.alter(() => myQueue.length(), { to: 0})
+  //   })
+  // })
+  // context('front()', () => {
+  //   it('Returns the front element in queue or null if the queue is empty.', () => {
+  //     const myQueue = new Queue()
+  //
+  //     return myQueue.front( 'foo')
+  //
   //   })
   // })
 })

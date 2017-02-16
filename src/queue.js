@@ -14,14 +14,20 @@
     return this.queue.shift();
   }
 
-  peek() {
-    return this.queue[0];
+  front() {
+  return this.queue[0];
   }
 
+  back() {
+  return this.queue[this.queue.length-1];
+  }
+  isEmpty(){
+   if (this.dataStore.length == 0) {
+    return true;}
+  }
   length() {
-    return this.queue.length;
+    return return this.stack.length;
   }
-
   print() {
     console.log(this.queue.join(' '));
   }
